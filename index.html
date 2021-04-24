@@ -1,0 +1,908 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(75475120, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true,
+		 webvisor:true
+	});
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/75475120" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+
+<title>Anem llegint! - Blog de lletres i llibres en Català</title>
+	
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<link rel="stylesheet" href="css/style.css">
+	
+<meta charset="utf-8">
+	
+<meta name="description" content= "Anem Llegint és el blog de llibres i cites literàries de l'escriptora Laura Casanovas Borrell" />
+	
+<meta name="keywords" content="llibres, cites, català, laura, laura casanovas, estiu, andorra, fi del món, món">
+  
+<meta name="author" content="Laura Casanovas">
+	
+<meta name="copyright" content="Markus Urban & Timefactories Company" />
+	
+<link rel="shortcut icon" href="images/posts/elements/fav.png">
+
+</head>
+
+	
+<body onload="check_orientation();">
+
+	
+	
+<div id="mobile" style="display: none;">
+	
+	
+	<img src="images/mobile/rotate.png" width="100%;" height="100%;" alt="Gira el teu dispositiu">
+	
+	
+</div>
+	
+	
+<div id="all" style="display: none;">
+	
+<!-- WEBPAGE TITLE -->
+	
+<div id="header">
+	
+	<img id="bottom_card" src="images/posts/elements/c_title.png" onclick="home2();">
+	
+</div>
+	
+	
+<!-- PAGE 1 -->
+<!-- ================================================================== -->
+
+<div id="welcome" style="display: ;">
+	
+	
+	
+<!-- CARD OPTIONS -->
+	
+<div id="container">
+	
+	
+	
+<div id="options">
+	
+  <!-- CARD BOOKS -->
+	
+  <div id="option_books" class="card_option" >
+	
+	  <img id="book_image" src="images/posts/elements/books.png" alt="llibres" height="100%;" onclick="llibres_n();">
+	
+  </div>
+	
+	
+	
+  <!-- CARD PHRASES -->
+	
+  <div id="option_phrases" class="card_option">
+	
+	  <img id="phrase_image" src="images/posts/elements/words.png" alt="cites" height="100%;" onclick="cites_n();">
+	
+  </div> 
+   
+	
+	
+  <div id="option_phrases" class="card_option">
+	
+	  <img id="about_image" src="images/posts/elements/author_b.png" alt="sobre mi" height="100%;" onclick="altres_n();">
+	
+  </div> 
+	
+		
+</div>
+
+
+	
+</div>
+	
+	
+<div id="container_b">
+	
+	
+	<div id="images_box">
+	
+	<img id="txt_books" class="text_img" src="images/posts/elements/cat_e.png">
+	
+	
+	
+	
+	
+	<img id="txt_cites" class="text_img" src="images/posts/elements/cit_e.png">
+	
+	
+	
+	
+	
+	<img id="txt_other" class="text_img" src="images/posts/elements/oth_e.png">
+	
+	
+	</div>
+	
+	
+</div>
+	
+<!-- END OF ROW -->
+
+	
+</div> <!-- END OF WELCOME PAGE -->
+	
+
+	
+	
+	
+<!-- PAGE 2 -->
+<!-- ================================================================== -->
+	
+<div id="catalan_books" style="display: none;">
+	
+	
+
+<div id="books_cover_center">
+	
+	
+<ul class='list-inline' style="display:;">
+	
+
+	
+  <li class='book' onclick="open_book(this);">
+    <img id="b_1_i" />
+  </li>
+
+  <li class='book' onclick="open_book(this);">
+    <img id="b_2_i" />
+  </li>
+
+  <li class='book' onclick="open_book(this);">
+    <img id="b_3_i" />
+  </li>
+
+  <li class='book' onclick="open_book(this);">
+    <img id="b_4_i" />
+  </li>
+	
+
+	
+</ul>
+
+</div>
+	
+	
+<div id="llibres_carregats">
+	
+	
+</div>
+	
+	
+	
+<div id="loading_cites_spinner_books" style="display: none;">
+	
+	<br>
+	
+	<br>
+		
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+	<br>
+	
+	<br>
+	
+</div>
+	
+
+	
+<div id="bar_return_new_2" onclick="more_books_load();">
+	
+	<p id="return_new_text">Veure més llibres</p>
+	
+</div>
+	
+	
+
+	
+
+<div id="snackbar">No hi ha més llibres per mostrar</div></div>
+	
+	
+	
+	
+
+	
+<!-- 	
+<div id="books_cover_center_bis">
+	
+<ul class="list-inline" style="display: ;">
+	
+	<li class="loading_b"></li>
+	
+	<li class="loading_b"></li>
+	
+	<li class="loading_b"></li>
+	
+	<li class="loading_b"></li>
+	
+	
+</ul>
+	
+</div>
+-->
+
+<!-- END SPACES -->
+	
+<br>
+<br>
+	
+	
+<!-- LA BARRA DE RETORN FIXA -->
+	
+	
+	
+
+	
+	
+	
+<!-- PAGE 3 -->
+<!-- ================================================================== -->
+	
+<div id="article_content" style="display: none ;">
+
+
+	
+	
+
+	
+	
+	
+<!-- EL LLIBRE DEL QUAL CANVIAREM EL CONTINGUT -->
+	
+<div id="llibre_main" style="display: none;">
+	
+<div id="content_text_blog">
+	
+<div id="top_bar">
+	
+	<div id="top_bar_left">
+	
+	<i id="calendar" class="material-icons">calendar_today</i>
+		
+	<p id="date">12/12/2020</p>
+		
+	</div>
+	
+	
+	<div id="top_bar_right">
+	
+	<i id="share" class="material-icons top_bar_icon share sharey"  style="visibility: hidden;">share</i>
+	
+	<i id="like" onclick="like(this);" class="material-icons top_bar_icon like likey"  style="visibility: hidden;">favorite_border</i>
+		
+	</div>
+	
+	
+</div>
+	
+	
+<div id="title_container">
+	
+<!-- The padding spacebox -->
+	
+<div id="spacebox_userpreferences" style="width: 100%; height: 1px;background-color: white;"></div>
+	
+<p id="font_title">Ignot<b id="font_author">&nbsp; de Manuel Baixauli</b></p>
+
+</div>
+	
+<hr>
+	
+
+<div id="content_plain_container">
+	
+	
+	
+	<div id="book_container_with_stars">
+		
+	<div id="book_cover_plain">
+	
+	
+	<div id="book_b2" class='book' onclick="buy(this);">
+    
+		<img id="book_image_cover" src='images/posts/llibres/portades/ignot.png' />
+  
+	</div>
+	
+		
+	</div>
+		
+		
+	<div id="rating_stars_container">
+		
+	<p id="amazon_info">Fes clic per comprar</p>
+	
+	<div id="stars_inner" style="visibility: hidden;">
+		
+	<i id="star1" class="material-icons star">star</i>
+		
+	<i id="star2" class="material-icons star">star</i>
+		
+	<i id="star3" class="material-icons star">star</i>
+		
+	<i id="star4" class="material-icons star">star_half</i>
+		
+	<i id="star5" class="material-icons star">star_border</i>
+	
+	</div>
+		
+	<br>
+		
+	<br>
+		
+	</div>
+	
+		
+		
+	</div>
+	
+	
+	
+	<div id="text_content_plain">
+	
+	
+		<p id="text_plain_plain">Els que som fans incondicionals de la prosa de Manuel Baixauli celebrem l’aparició de cada nou llibre seu amb alegria d’epifania. I el millor del cas és que el nostre autor no ens defrauda mai.
+			
+		<br> <br>
+			
+		Obrir les planes d’un llibre de Baixauli, i Ignot n’és una molt bona mostra, és entrar en un món nou, d’escenaris i personatges onírics, una altra realitat, que només soc capaç de comparar amb una sessió d’hipnosi. Ignot t’atrapa des de les primeres línies, quan només entrar al llibre caus en un estat semihipnòtic de fascinació que no et deixa fins que acabes el llibre, immers en una situació d’estranyesa, d’allunyament de la lògica convencional i dels paisatges de la vida quotidiana. 
+			
+		<br> <br>
+			
+		
+		En els llibres i l’escriptura de Manuel Baixauli tot és estrany, la sensació és de no entendre res, ni de la trama, ni de les motivacions dels personatges. La sensació és la d’estar perdut en un mar de lletres i de no acabar de ser capaç de saber què està passant, quin és el perfil i la forma del món i dels homes i les dones que s’entreveuen a les pàgines. Aquest desconcert, aquesta sensació d’estranyesa que fins i tot altera el ritme de la respiració durant la lectura, no és mai avorrida ni esgotadora, sinó fascinant, addictiva. Ignot et fa entrar en un món nou, desconegut, irreal, màgic, inquietant del que no vols sortir, ple de personatges fascinants i estranys però que entren molt endins. 
+
+</p>
+		
+		
+	<div id="author_about_profile">
+		
+		
+		<div id="content_boundingbox">
+			
+		<p id="author_name_text">Laura Casanovas Borrell</p>
+		
+		<img id="author_photo" src="images/posts/autors/laura.jpg">
+		
+		</div>
+		
+		
+		
+	</div>
+	
+	</div>
+	
+
+</div>
+
+	
+	
+	
+</div> <!-- END CONTENT TEXT BLOGF -->
+	
+</div>	
+	
+	
+	
+<!-- LOADING EX. -->
+	
+<div id="loading_book_skeleton">
+	
+<div id="content_text_blog">
+	
+<div id="top_bar">
+	
+	<div id="top_bar_left">
+	
+	<i id="calendar_l" class="material-icons">calendar_today</i>
+		
+	&nbsp; 
+		
+	<div id="loading_box"></div>
+
+	</div>
+	
+	
+	<div id="top_bar_right">
+	
+	<i id="share_l" class="material-icons top_bar_icon share" style="visibility: hidden;">share</i>
+	
+	<i id="like_l" class="material-icons top_bar_icon like" style="visibility: hidden;">favorite_border</i>
+		
+	</div>
+	
+	
+</div>
+	
+	
+<div id="title_container">
+	
+	
+<div class="center">
+	
+<div id="title_load"></div>
+	
+<div id="author_load"></div>
+	
+</div>
+	
+
+</div>
+	
+<hr>
+	
+
+<div id="content_plain_container">
+	
+	
+	
+	<div id="book_container_with_stars">
+		
+	<div id="book_cover_plain">
+	
+	
+	<div id="book_load"></div>
+	
+		
+	</div>
+		
+		
+	<div id="rating_stars_container">
+		
+		
+	
+		
+		
+	<div id="stars_inner" style="visibility: hidden;">
+		
+	<i id="star1" class="material-icons starl">star</i>
+		
+	<i id="star2" class="material-icons starl">star</i>
+		
+	<i id="star3" class="material-icons starl">star</i>
+		
+	<i id="star4" class="material-icons starl">star</i>
+		
+	<i id="star5" class="material-icons starl">star</i>
+	
+	</div>
+		
+		
+	</div>
+	
+		
+		
+	</div>
+	
+	
+	
+	<div id="text_content_plain">
+	
+	    <br> <br>
+		
+		<div id="line_load"></div>
+		
+		<div id="line_load"></div>
+		
+		<div id="h_line_load"></div>
+		
+		<br> <br>
+		
+		
+		<div id="line_load"></div>
+		
+		<div id="line_load"></div>
+		
+		<div id="h_line_load"></div>
+		
+	    <br> <br>	
+		
+		<div id="line_load"></div>
+		
+		<div id="h_line_load" style="width: 40%;"></div>
+		
+		<br> 
+		
+	<div id="author_about_profile">
+		
+		
+		<div id="content_boundingbox">
+			
+		<div id="loading_box"></div>
+		
+		<div id="loading_image"></div>
+		
+		</div>
+		
+		<br> <br> <br>
+		
+		
+		
+	</div>
+	
+	</div>
+	
+
+</div>
+
+	
+	
+	
+</div> <!-- END CONTENT TEXT BLOGF -->
+	
+</div>
+	
+
+	
+	
+<div id="bar_return_new" onclick="return_to_gallery();">
+	
+	<p id="return_new_text">Retornar a tots els llibres</p>
+	
+</div>
+	
+
+	
+<br><br><br><br>	
+	
+
+
+	
+	
+	
+<!-- LA SNACKBAR -->
+
+<div id="snackbar">S'ha marcat que t'agrada</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+	
+	
+<!-- PÀGINA DE CITES (no, d'amor no... 😥 ) -->
+	
+	
+<div id="cites_container" style="display: none ;">
+	
+
+	
+<!-- BARRA DE RETORN PER A CITES INDIVIDUALS -->
+	
+<div id="bar_return_new_q" onclick="return_to_cites();" >
+	
+	<p id="return_new_text">Retornar a totes les cites</p>
+	
+</div>
+	
+	
+	
+<div id="cites_carregades">
+	
+	
+</div>
+	
+
+	
+	
+	
+<div id="loading_cites_spinner_lower" style="display: none;">
+	
+	<br>
+	
+	<br>
+		
+	<div class="lds-ring" id="loading_ring_defi"><div></div><div></div><div></div><div></div></div>
+
+	<br>
+	
+	<br>
+	
+</div>
+	
+	
+<!-- LA SNACKBAR -->
+
+<div id="snackbar_c">S'ha marcat que t'agrada</div>
+	
+</div>
+	
+	
+	
+	
+	
+	
+<div id="about_me_mobile" data-info="Pàgina Sobre mi mobile" style="display: none;">
+	
+	
+	<div id="about_card">
+	
+		
+
+		
+	<div id="content_boundingbox_b">
+		
+		<img id="author_photo_b" src="images/posts/autors/laura.jpg">
+			
+		<p id="author_name_text_b">Laura Casanovas Borrell</p>
+		
+	</div>
+		
+
+	<hr>
+		
+		
+	<div id="comp_a_mobile">
+		
+		<p id="bio">Laura Casanovas va néixer a La Seu d’Urgell l’any 1973. És llicenciada en filologia catalana i ha treballat de lexicògrafa, professora d'idiomes i venedora de llaminadures, entre d'altres professions. <br> <br> Actualment és assessora lingüística als Centres d’Autoaprenentatge de Català d’Andorra i viu amb la seva família, tres gossos i un gat en un poblet diminut del Pirineu. És una apassionada dels viatges, les passejades per la muntanya, les bones històries i la seva gent. Un estiu a la fi del món és la seva primera novel·la.</p>
+		
+	</div>
+		
+	<br>
+
+	
+		
+		
+	<div id="comp_defi_mobile">
+		
+	<div id="comp_c">
+		
+	<div id="comp_b">
+		
+		<p id="title_bk">Obres publicades</p>
+		
+		
+	<img class="book_own" src="images/posts/llibres/portades/estiu.jpg" onclick="window.open('https://www.llibresdelsegle.es/novel-la-juvenil-norfeu/');" style="margin-right: 15px;">
+		
+	<img class="book_own" src="images/posts/llibres/portades/secret.PNG" onclick="window.open('https://edicionssaloria.com/historia-del-pirineu/81-els-secrets-dels-miralls-i-el-secret-de-les-paraules-.html');">
+		
+	</div>
+		
+		
+	<div id="comp_b" style="margin-left: 30px;">
+		
+	<p id="title_bk">Altres contes</p>
+		
+		
+	<img class="book_own" src="images/posts/llibres/portades/amor.PNG" style="margin-right: 15px;" onclick="window.open('https://www.yumpu.com/es/document/read/13325771/1-laura-casanovas-i-borrell-amor-de-mare-fa-el-pont-blau')"; >
+		
+	<img class="book_own" src="images/posts/llibres/portades/benevole.PNG" onclick="window.open('http://www.adma.cat/ARXIUS/usr_1024392203.pdf')">
+		
+	</div>
+		
+	</div>
+		
+	</div>
+	
+	
+	<br>
+		
+	<br>
+
+	
+	<div id="more_author_mobile" style="height: max-content; width: max-content;">
+		
+
+	<br>
+		
+		
+	<div class="calaix">
+		
+		
+	
+	<img id="wikilogo" src="images/posts/elements/other/wiki.png" width="70px" height="70px" style="display: inline-block; vertical-align:middle;" onclick="window.open('https://ca.wikipedia.org/wiki/Laura_Casanovas_Borrell');">
+		
+	<p id="title_bk" style="font-size: 30px;display: inline-block; vertical-align: baseline; margin-left: 10px;">Troba'm a la Wikipedia! </p>
+		
+	
+
+	</div>
+		
+	<!-- BOOKS -->
+		
+	<!-- OTHER BOOKS -->
+		
+		
+	</div>
+	
+	<br>
+		
+	<br>
+		
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+<!-- ABOUT ME MOBILE FRIENDLY -->
+	
+	
+<div id="about_me" data-info="Pàgina Sobre mi" style="display: none;">
+	
+	
+	<div id="about_card">
+	
+		
+
+		
+	<div id="content_boundingbox_b">
+		
+		<img id="author_photo_b" src="images/posts/autors/laura.jpg">
+			
+		<p id="author_name_text_b">Laura Casanovas Borrell</p>
+		
+	</div>
+		
+
+	<hr>
+		
+		
+	<div id="comp_a">
+		
+		<p id="bio">Laura Casanovas va néixer a La Seu d’Urgell l’any 1973. És llicenciada en filologia catalana i ha treballat de lexicògrafa, professora d'idiomes i venedora de llaminadures, entre d'altres professions. <br> <br> Actualment és assessora lingüística als Centres d’Autoaprenentatge de Català d’Andorra i viu amb la seva família, tres gossos i un gat en un poblet diminut del Pirineu. És una apassionada dels viatges, les passejades per la muntanya, les bones històries i la seva gent. Un estiu a la fi del món és la seva primera novel·la.</p>
+		
+	</div>
+		
+		
+
+	
+		
+		
+	<div id="comp_defi">
+		
+	<div id="comp_c">
+		
+	<div id="comp_b">
+		
+		<p id="title_bk">Obres publicades</p>
+		
+		
+	<img class="book_own" src="images/posts/llibres/portades/estiu.jpg" onclick="window.open('https://www.llibresdelsegle.es/novel-la-juvenil-norfeu/');" style="margin-right: 15px;">
+		
+	<img class="book_own" src="images/posts/llibres/portades/secret.PNG" onclick="window.open('https://edicionssaloria.com/historia-del-pirineu/81-els-secrets-dels-miralls-i-el-secret-de-les-paraules-.html');">
+		
+	</div>
+		
+		
+	<div id="comp_b" style="margin-left: 30px;">
+		
+	<p id="title_bk">Altres contes</p>
+		
+		
+	<img class="book_own" src="images/posts/llibres/portades/amor.PNG" style="margin-right: 15px;" onclick="window.open('https://www.yumpu.com/es/document/read/13325771/1-laura-casanovas-i-borrell-amor-de-mare-fa-el-pont-blau')"; >
+		
+	<img class="book_own" src="images/posts/llibres/portades/benevole.PNG" onclick="window.open('http://www.adma.cat/ARXIUS/usr_1024392203.pdf')">
+		
+	</div>
+		
+	</div>
+		
+	</div>
+	
+	
+		
+		
+		
+		
+		
+		
+	
+	<div id="more_author" style="height: max-content; width: max-content;">
+		
+
+	<br>
+		
+		
+	<div class="calaix" style="margin-left: 50px;">
+		
+		
+	
+	<img id="wikilogo" src="images/posts/elements/other/wiki.png" width="70px" height="70px" style="display: inline-block; vertical-align:middle;" onclick="window.open('https://ca.wikipedia.org/wiki/Laura_Casanovas_Borrell');">
+		
+	<p id="title_bk" style="font-size: 30px;display: inline-block; vertical-align: baseline; margin-left: 10px;">Troba'm a la Wikipedia! </p>
+		
+	
+
+	</div>
+		
+	<!-- BOOKS -->
+		
+	<!-- OTHER BOOKS -->
+		
+		
+	</div>
+	
+	<br>
+		
+	<br>
+		
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<br> <br>	
+	
+<div id="loading_spinner_modern" style="display: none;">
+	
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	
+</div>
+	
+
+
+
+	
+<!-- TOOLTIP SHARE -->
+	
+<div id="template_share" style="display: none ;">
+	
+	<i id="sharey" class="fa fa-facebook-square" data-text="" data-author=""></i>
+			
+	<i id="sharey" class="fa fa-twitter-square" data-text="" data-author=""></i>
+			
+	<i id="sharey" class="fa fa-envelope-square" data-text="" data-author=""></i>
+	
+</div>
+	
+
+	
+</div>
+	
+
+	
+	
+
+
+	
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+	
+
+<!-- INTERNAL SCRIPTS -->
+	
+<script src="js/script.js"></script>
+	
+</body>
+	
+</html>
