@@ -1,0 +1,2456 @@
+/*
+
+
+ |,\/,| |[_' |[_]) |[_]) \\//
+    ||\/|| |[_, ||'\, ||'\,  ||
+
+            ___ __ __ ____  __  __  ____  _  _    __    __
+           // ' |[_]| |[_]) || ((_' '||' |,\/,|  //\\  ((_'
+           \\_, |[']| ||'\, || ,_))  ||  ||\/|| //``\\ ,_))
+                                                               
+
+                                         ,;7,
+                                       _ ||:|,
+                     _,---,_           )\'  '|
+                   .'_.-.,_ '.         ',')  j
+                  /,'   ___}  \        _/   /
+      .,         ,1  .''  =\ _.''.   ,`';_ |
+    .'  \        (.'T ~, (' ) ',.'  /     ';',
+    \   .\(\O/)_. \ (    _Z-'`>--, .'',      ;
+     \  |   I  _|._>;--'`,-j-'    ;    ',  .'
+    __\_|   _.'.-7 ) `'-' "       (      ;'
+  .'.'_.'|.' .'   \ ',_           .'\   /
+  | |  |.'  /      \   \          l  \ /
+  | _.-'   /        '. ('._   _ ,.'   \i
+,--' ---' / k  _.-,.-|__L, '-' ' ()    ;
+ '._     (   ';   (    _-}             |
+  / '     \   ;    ',.__;         ()   /
+ /         |   ;    ; ___._._____.: :-j
+|           \,__',-' ____: :_____.: :-\
+|               F :   .  ' '        ,  L
+',             J  |   ;             j  |
+  \            |  |    L            |  J
+   ;         .-F  |    ;           J    L
+    \___,---' J'--:    j,---,___   |_   |
+              |   |'--' L       '--| '-'|
+               '.,L     |----.__   j.__.'
+                | '----'   |,   '-'  }
+                j         / ('-----';
+               { "---'--;'  }       |
+               |        |   '.----,.'
+               ',.__.__.'    |=, _/
+                |     /      |    '.
+                |'= -x       L___   '--,
+                L   __\          '-----'
+                 '.____)
+
+
+
+  És nadal i jo estic... treballant!!!! 
+  
+  Espero que disfrutis de les festes i et desitjo una bona entrada a l'any 2020
+
+  Ah, també et desitjo una bona lectura!
+
+  Markus
+
+*/
+
+
+
+/* AQUEST ÉS EL FITXER CSS DE LA PÀGINA */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Arapey&family=Crimson+Text&family=Kalam:wght@300&family=Special+Elite&display=swap');
+
+
+@font-face {
+    font-family: 'BadlyStamped';
+    src: url('../fonts/BadlyStamped.woff2') format('woff2'),
+        url('../fonts/BadlyStamped.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sunshine Demo';
+    src: url('../fonts/SunshineDemo-Regular.woff2') format('woff2'),
+        url('../fonts/SunshineDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+	
+	width: 100%;
+	
+}
+
+body {
+	
+	margin: 0px;
+	
+	background-image: url(../images/posts/bg.jpg); 
+	
+	width: 100%;
+}
+
+/* CUSTOM SCROLLBAR */
+
+
+
+#header {
+	
+
+	margin-right: auto;
+	
+	margin-left: auto;
+	
+	display: block;
+	
+	width: max-content;
+	
+}
+
+
+/* CARTA FONS */
+
+#bottom_card {
+	
+	
+	width: 900px;
+
+	margin-top: 50px;
+	
+	margin-left: 50px;
+	
+	margin-right: 50px;
+	
+	cursor: pointer;
+}
+
+
+
+#title {
+	
+	
+	width: 500px;
+	
+	padding-top: 30px;
+	
+	padding-bottom: 30px;
+	
+	position: absolute;
+    
+	left: 430px;
+    
+	top: 15px;
+	
+	
+}
+
+
+
+
+/* OPTION CARDS TOTAL 970 */
+
+
+#container {
+	
+	width: 100%;
+	
+	margin-top: 45px;
+	
+}
+
+#options {
+	
+	width: max-content;
+	
+	height: 210px;
+	
+	margin-right: auto;
+	
+	margin-left: auto;
+	
+	display: block;
+	
+		
+}
+
+.card_option {
+	
+	width: max-content;
+	
+	height: 100%;
+	
+	margin-left: 50px;
+	
+	margin-right: 50px;
+
+	display: inline-block;
+	
+}
+
+
+
+/* IMAGES CARDS */
+
+#phrase_image {
+	
+	box-shadow: 1px 1px 10px gray;
+	
+	-ms-transform: rotate(5deg); /* IE 9 */
+  
+	transform: rotate(5deg);
+}
+
+#book_image {
+	
+	box-shadow: 1px 1px 10px gray;
+	
+	-ms-transform: rotate(-3deg); /* IE 9 */
+  
+	transform: rotate(-3deg);
+}
+
+
+#about_image {
+	
+	box-shadow: 1px 1px 10px gray;
+	
+	-ms-transform: rotate(-1deg); /* IE 9 */
+  
+	transform: rotate(-1deg);
+}
+
+
+/* IMAGES ON HOVER */
+
+#phrase_image:hover {
+	
+	box-shadow: 1px 1px 10px black;
+	
+	-ms-transform: rotate(7deg); /* IE 9 */
+  
+	transform: rotate(7deg);
+
+	cursor: pointer;
+}
+
+#book_image:hover {
+	
+	box-shadow: 1px 1px 10px black;
+	
+	-ms-transform: rotate(-5deg); /* IE 9 */
+  
+	transform: rotate(-5deg);
+	
+	cursor: pointer;
+	
+	
+}
+
+
+#about_image:hover {
+	
+	box-shadow: 1px 1px 10px black;
+	
+	-ms-transform: rotate(-4deg); /* IE 9 */
+  
+	transform: rotate(-4deg);
+	
+	cursor: pointer;
+}
+
+
+
+/* BARRA 2 */
+
+#container_b {
+	
+	width: 100%;
+	
+	margin-top: 45px;
+	
+	
+	
+	
+}
+
+#images_box {
+	
+	width: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+
+
+.text_img {
+	
+	box-shadow: 1px 1px 5px gray;
+	
+	display: inline-block;
+	
+	margin-left: 50px;
+	
+	margin-right: 50px;
+}
+
+
+
+#txt_books {
+	
+	-ms-transform: rotate(-1deg); /* IE 9 */
+  
+	transform: rotate(-1deg);
+	
+}
+
+
+#txt_cites {
+	
+	-ms-transform: rotate(1deg); /* IE 9 */
+  
+	transform: rotate(1deg);
+	
+}
+
+
+#txt_other {
+	
+	-ms-transform: rotate(-1deg); /* IE 9 */
+  
+	transform: rotate(-1deg);
+	
+}
+
+
+
+
+.book_arrow {
+	
+	height: 45px;
+	
+	width: 45px;
+	
+	background-color: white;
+
+	margin-bottom: 100px;
+	
+	border-radius: 50%;
+	
+	box-shadow: 1px 1px 4px black;
+	
+	
+}
+
+
+.book_arrow:hover {
+	
+	box-shadow: 1px 1px 8px;
+	
+	cursor: pointer;
+}
+
+/* CSS PER ALS LLIBRES EN 3D */
+
+.book, .book img, .book::after,
+.book::before {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+.list-inline {
+  padding: 0px;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin-left: 2em;
+}
+.list-inline > li:first-child {
+  margin-left: 0;
+}
+
+.book {
+  cursor: pointer;
+  display: block;
+  width: 190px;
+  height: 260px;
+  position: relative;
+  background: white;
+  z-index: 1;
+  box-shadow: 1px 1px 10px black;
+  overflow: hidden;
+  -webkit-transition: box-shadow .3s linear;
+  transition: box-shadow .3s linear;
+}
+
+.book img {
+  width: inherit;
+  height: inherit;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  -webkit-transition: all .45s ease;
+  transition: all .45s ease;
+}
+
+.book:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 9px 20px 0 rgba(0, 0, 0, 0.45);
+}
+.book:hover img {
+  -webkit-transform: rotateY(-25deg);
+          transform: rotateY(-25deg);
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.book::after,
+.book::before {
+  content: '';
+  display: block;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: white;
+  border: 1px solid #d9d9d9;
+}
+
+.book::before {
+  left: -3px;
+}
+
+.book::after {
+  left: -6px;
+}
+
+/* LLIBRES AL CENTRE */
+
+
+#books_cover_center {
+	
+	width: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	margin-top: 30px;
+}
+
+#books_cover_center_bis {
+	
+	width: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	margin-top: 20px;
+}
+
+#catalan_books {
+	
+	width: 100%;
+}
+
+
+/* NAVIGATION ARROWS */
+
+#nav_back {
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+	
+  width: 100px;
+	
+  display: inline-block;
+	
+  margin-right: 50px;
+	
+  vertical-align: middle;
+
+	
+}
+
+#nav_forward {
+	
+	width: 100px;
+	
+	margin-left: 50px;
+
+	vertical-align: middle;
+	
+}
+
+
+
+#nav_back:hover {
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+	
+  width: 100px;
+	
+  display: inline-block;
+	
+  margin-right: 50px;
+	
+  cursor: pointer;
+	
+}
+
+#nav_forward:hover {
+	
+	width: 100px;
+	
+	margin-left: 50px;
+	
+	cursor: pointer;
+	
+}
+
+.navigation_books {
+	
+	display: inline-block;
+}
+
+
+
+
+/* LOADING ANIMATION */
+
+.lds-ring {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#ring_container {
+	
+	
+	width: 100%;
+}
+
+
+
+/* ARTICLE COMPONENTS */
+
+/* ARTICLE NOTEBOOK */
+
+
+#content_text_blog {
+	
+	margin-top: 40px;
+	
+	background-color: white;
+	
+	width: 85%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 15px black;
+	
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+/* INTERIOR DEL FULL */
+
+.booktitle_image {
+	
+	width: 300px;
+	
+	padding-top: 40px;
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+
+/* CUSTOM TITLES */
+
+#font_title {
+	
+	font-family: "BadlyStamped";
+	
+    text-align: center;
+	
+	font-size: 60px;
+	
+	font-weight: 100;
+	
+	margin: 0px;
+	
+	color: darkslateblue;
+}
+
+#font_author {
+	
+	font-family: "Sunshine Demo";
+	
+	font-weight: 100;
+	
+	font-size: 30px;
+	
+	color: darkslateblue;
+	
+}
+
+/* TITLE CONTAINER */
+
+#title_container {
+	
+	padding-top: 10px;
+	
+	padding-bottom: 40px;
+}
+
+/* TOP ARTICLE BAR */
+
+#top_bar {
+	
+	width: 100%;
+	
+	text-align: right;
+	
+	padding-top: 25px;
+	
+	display: flex;
+}
+
+#top_bar_left {
+	
+	flex-grow: 1;
+	
+	display: inline-block;
+	
+	text-align: left;
+}
+
+#top_bar_right {
+	
+	width: max-content;
+	
+	text-align: right;
+	
+	display: inline-block;
+	
+	
+}
+
+.top_bar_icon {
+	
+	color: darkslategray;
+	
+	font-size: 25px;
+	
+	cursor: pointer;
+	
+}
+
+#bookmark {
+	
+	padding-right: 20px;
+}
+
+.share {
+	
+	margin-right: 20px;
+}
+
+.like {
+	
+	margin-right: 30px;
+}
+
+
+.star {
+	
+	color: darkslategray;
+}
+
+#star1 {
+	
+	padding-left: 25px;
+}
+
+
+#calendar {
+	
+	padding-left: 25px;
+	
+	color: darkslategray;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+
+	
+}
+
+
+#date {
+	
+	display: inline-block;
+	
+	font-family: "Merriweather";
+		
+	padding-left: 10px;
+	
+	vertical-align: middle;
+	
+	margin: 0px;
+	
+	color: darkslategray;
+	
+}
+
+/* LLIBRE 3D DEL APARTAT PERFIL */
+
+#book_b2 {
+	
+	width: 280px;
+	
+	height: 400px;
+	
+	margin-top: 50px;
+	
+	margin-left: 60px;
+	
+	margin-right: 60px;
+	
+}
+
+/* CONTINGUT DE L'ARTICLE */
+
+#content_plain_container {
+	
+	display: flex;
+	
+	height: max-content;
+}
+
+#book_cover_plain {
+	
+	width: max-content;
+
+}
+
+#text_content_plain {
+	
+	flex-grow: 1;
+	
+	padding-top: 30px;
+	
+	padding-left: 5px;
+	
+	padding-right: 50px;
+	
+	color: black;
+	
+	
+}
+
+#text_plain_plain {
+	
+	font-family: "Noto Sans";
+	
+	margin-bottom: 0px;
+	
+	font-size: 16px;
+	
+	text-align: justify;
+	
+	
+}
+
+
+
+/* STAR RATING */
+
+#stars_inner {
+	
+	width: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+#rating_stars_container {
+	
+	width: 100%;
+	
+	margin-top: 25px;
+	
+	
+}
+
+
+
+/* ABOUT AUTOR */
+
+#author_about_profile {
+	
+	width: 100%;
+	
+	margin-top: 0px;
+	
+	margin-bottom: 20px;
+}
+
+
+#author_name_text {
+	
+	color: darkslategray;
+	
+	font-family: "Just Another Hand";
+	
+	font-size: 30px;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+}
+
+#author_photo {
+	
+	border-radius: 50%;
+	
+	vertical-align: middle;
+	
+	margin-left: 20px;
+	
+	width: 50px;
+	
+	display: inline-block;
+}
+
+#content_boundingbox {
+	
+	width: max-content;
+	
+	margin-left: auto;
+}
+
+
+/* PÀGINA CITES */
+
+
+.citation_box {
+	
+	margin-top: 20px;
+	
+	width: max-content;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 15px black;
+	
+	border-radius: 15px 15px 0px 0px;
+	
+	background-color: white;
+	
+}
+
+
+#citation_content {
+	
+	margin: 0px;
+	
+	font-family: "Indie Flower";
+	
+	padding-top: 25px;
+	
+	padding-bottom: 10px;
+	
+	font-size: 20px;
+	
+	text-align: center;
+	
+	padding-left: 40px;
+	
+	padding-right: 40px;
+	
+	
+}
+
+#citation_author {
+	
+	text-align: right;
+	
+	padding-right: 20px;
+	
+	padding-bottom: 20px;
+	
+	font-family: "Noto Sans";
+	
+	font-size: 15px;
+	
+	margin: 0px;
+	
+	padding-top: 5px;
+	
+	font-weight: bolder;
+	
+
+}
+
+#pin {
+	
+	width: 100%;
+	
+	font-size: 40px;
+	
+	text-shadow: 1px 1px 4px gray;
+	
+	color: black;
+	
+	text-align: center;
+	
+	 position: absolute;
+  
+	left: 0px;
+  
+	top: 230px;
+	
+	
+}
+
+
+/* PÀGINA CITES VERSIÓ bigimpression */
+
+#big_impression {
+	
+	background-color: white;
+	
+	box-shadow: 1px 1px 10px black;
+	
+	border-radius: 15px 15px 15px 15px;
+	
+	display: inline-block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	width: 72%;
+	
+	height: max-content;
+	
+	margin-top: 40px;
+	
+	
+}
+
+
+#cita_text {
+	
+	text-align: center;
+	
+	font-family: "Indie Flower";
+	
+	font-size: 25px;
+	
+	padding-top: 50px;
+	
+	margin: 0px;
+}
+
+#cita_autor {
+	
+	margin: 0px;
+	
+	text-align: right;
+	
+	padding-top: 10px;
+	
+	padding-right: 30px;
+	
+	padding-bottom: 30px;
+	
+	font-family: "Noto Sans";
+	
+	font-weight: bolder;
+}
+
+
+
+
+
+#nav2_back {
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+	
+  width: 100px;
+	
+  display: inline-block;
+	
+  margin-right: 50px;
+	
+  vertical-align: middle;
+
+	
+}
+
+#nav2_forward {
+	
+	width: 100px;
+	
+	margin-left: 50px;
+
+	vertical-align: middle;
+	
+}
+
+
+
+#nav2_back:hover {
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+	
+  width: 100px;
+	
+  display: inline-block;
+	
+  margin-right: 50px;
+	
+  cursor: pointer;
+	
+}
+
+#nav2_forward:hover {
+	
+	width: 100px;
+	
+	margin-left: 50px;
+	
+	cursor: pointer;
+	
+}
+
+
+/* PÀGINA CITES V3 */
+
+#cita_container {
+	
+	padding-top: 0px;
+	
+	padding-bottom: 0px;
+}
+
+#cita_context {
+	
+	text-align: center;
+	
+	font-family: "Merryweather";
+	
+	font-size: 28px;
+		
+	margin: 0px;
+	
+	padding-top: 8px;
+}
+
+
+#cita_about_profile {
+	
+	width: 98%;
+	
+	margin-top: 0px;
+	
+	margin-bottom: 5px;
+}
+
+#cita_bar {
+	
+	width: 100%;
+	
+	text-align: right;
+	
+	padding-top: 25px;
+	
+	display: flex;
+}
+
+
+#author_photo:hover {
+	
+	/* cursor: pointer; */
+	
+}
+
+
+#content_text_cita {
+	
+	margin-top: 40px;
+	
+	background-color: white;
+	
+	width: 75%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	
+	
+	
+	
+	 box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+   
+}
+	
+	
+
+
+
+#author_name_text_c {
+	
+	color: darkslategray;
+	
+	font-family: "Just Another Hand";
+	
+	font-size: 30px;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+	
+	margin: 0px;
+
+}
+
+#author_photo_c {
+	
+	border-radius: 50%;
+	
+	vertical-align: middle;
+	
+	margin: 0px;
+	
+	margin-left: 20px;
+	
+	width: 50px;
+	
+	display: inline-block;
+	
+}
+
+#cita_plain_container {
+	
+	display: flex;
+	
+	height: max-content;
+	
+	padding-top: 5px;
+	
+	padding-bottom: 20px;
+}
+
+
+
+
+/* BARRA DE AUTORS DE CITES */
+
+
+#author_select {
+	
+	margin-top: 55px;
+	
+	background-color: white;
+	
+	width: 80%;
+	
+	height: max-content;
+
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 15px black;
+
+}
+
+
+#author_options {
+	
+	width: 100%;
+	
+	height: max-content;
+	
+	padding-top: 15px;
+	
+	padding-bottom: 15px;
+	
+	text-align: center;
+
+}
+
+.author_select_option {
+	
+	display: inline-block;
+	
+	font-family: "Noto Sans";
+	
+	padding-left: 10px;
+	
+	padding-right: 10px;
+	
+	font-size: 13px;
+	
+	margin: 0px;
+	
+	padding-bottom: 7px;
+	
+	padding-top: 7px;
+	
+	font-weight: 500;
+}
+
+
+/* NOVA BARRA D'AUTORS */
+
+
+
+#author_inner {
+	
+	width: 90%;
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+
+
+
+/* THE AUTHORS BAR V2 */
+
+#return_bar {
+	
+  position: fixed;
+  
+  top: 40px;
+  
+  left: 40px;
+	
+  width: 60px;
+	
+  height: 60px;
+	
+  background-color: white;
+	
+  border-radius: 50%;
+	
+  box-shadow: 1px 1px 4px black;
+	
+  cursor: pointer;
+	
+}
+
+
+#retuen_icon_2 {
+
+	font-size: 30px;
+	
+	text-align: center;
+	
+	display: block;
+	
+	vertical-align: center;
+	
+	margin-top: 13px;
+	
+	
+}
+
+
+#authors_absolute{
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 120px;
+  height: 87%;
+	
+  background-color: #dce0e6;
+	
+  box-shadow: 1px 1px 4px black;
+}
+
+
+.author_link {
+	
+	display: inline-block;
+	
+	font-size: 10px;
+	
+	font-family: "Noto Sans";
+	
+	padding-left: 2px;
+	
+	padding-right: 0px;
+	
+	padding-bottom: 1px;
+	
+	font-weight: 200;
+	
+	cursor: pointer;
+	
+	margin: 0px;
+
+}
+
+
+.author_link_s {
+	
+	display: inline-block;
+	
+	font-size: 10px;
+	
+	font-family: "Noto Sans";
+	
+	padding-right: 2px;
+	
+	padding-bottom: 1px;
+	
+	font-weight: 200;
+	
+	cursor: pointer;
+	
+	margin: 0px;
+
+}
+
+
+
+/* LOADING CITA */
+
+.add_20 {
+	
+	padding-right: 20px;
+	
+}
+
+.add_30 {
+	
+	padding-right: 20px;
+	
+}
+
+#share_l {
+	
+	color: lightgrey;
+	
+	cursor: default;
+	
+	animation-name: skeleton_2;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+}
+
+#like_l {
+	
+	color: lightgrey;
+	
+	cursor: default;
+	
+	animation-name: skeleton_2;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+}
+
+
+
+#loading_box {
+	
+	width: 100px;
+	
+	height: 15px;
+	
+	background-color: lightgray;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+	
+	margin: 0px;
+	
+	border-radius: 15px 15px 15px 15px;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+}
+
+#loading_image {
+	
+	border-radius: 50%;
+	
+	vertical-align: middle;
+	
+	margin: 0px;
+	
+	margin-left: 20px;
+	
+	width: 45px;
+	
+	height: 45px;
+	
+	display: inline-block;
+	
+	background-color: lightgrey;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	
+}
+
+#loading_cita {
+	
+	margin: 0px;
+	
+	margin-top: 20px;
+	
+	margin-bottom: 20px;
+	
+	width: 80%;
+	
+	background-color: lightgrey;
+	
+	height: 20px;
+	
+	border-radius: 15px 15px 15px 15px;
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	
+}
+
+
+
+/* ANIMACIÓ DELS ELEMENTS */
+
+@keyframes skeleton {
+	
+	0%   {background-color: lightgrey;}
+	10%  {background-color: #d7dbe0;}
+    25%  {background-color: #d3d6db;}
+    50%  {background-color: #c4c8cf;}
+    100% {background-color: lightgrey;}
+	
+}
+
+
+@keyframes skeleton_2 {
+	
+	0%   {color: lightgrey;}
+	10%  {color: #d7dbe0;}
+    25%  {color: #d3d6db;}
+    50%  {color: #c4c8cf;}
+    100% {color: lightgrey;}
+	
+}
+
+
+
+
+/* SNACK BAR CODE FROM W3 */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  font-family: "Noto Sans";
+  border-radius: 15px 15px 15px 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+
+
+#snackbar_c {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  font-family: "Noto Sans";
+  border-radius: 15px 15px 15px 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar_c.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+/* LOADING BOOK */
+
+.starl {
+	
+	color: lightgrey;
+}
+
+
+#calendar_l {
+	
+	padding-left: 25px;
+	
+	color: lightgrey;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+
+
+}
+
+#book_load {
+	
+	width: 190px;
+  
+	height: 260px;
+	
+	width: 280px;
+	
+	height: 400px;
+	
+	margin-top: 50px;
+	
+	margin-left: 60px;
+	
+	margin-right: 60px;
+	
+	background-color: lightgrey;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+
+#title_load {
+	
+	width: 220px;
+	
+	height: 50px;
+	
+	background-color: lightgrey;
+	
+	border-radius: 5px 5px 5px 5px;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	
+	display: inline-block;
+	
+	margin-right: 20px;
+	
+	
+}
+
+
+#author_load {
+	
+	width: 300px;
+	
+	height: 20px;
+	
+	background-color: lightgrey;
+	
+	border-radius: 30px 30px 30px 30px;
+	
+	animation-name: skeleton;
+  
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	
+	display: inline-block;
+	
+	
+}
+
+
+.center {
+	
+	width: max-content;
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+
+
+#line_load {
+	
+	width: 100%;
+	
+	height: 14px;
+	
+	background-color: lightgrey;
+	
+	margin-bottom: 20px;
+}
+
+
+#h_line_load {
+	
+	width: 78%;
+	
+	height: 14px;
+	
+	background-color: lightgrey;
+	
+	margin-bottom: 20px;
+	
+}
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  box-shadow: 1px 1px 14px black;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  
+  background-color: mediumseagreen;
+  
+  color: white;
+
+ 
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+
+#share_t {
+	
+	font-family: "Noto Sans";
+	
+	display:  inline-block;
+}
+
+
+#share_opt {
+
+  display: inline-block;
+	
+  margin-left: 30px;
+	
+
+}
+
+#share_title_t {
+	
+	font-family: "Noto Sans";
+	
+	font-size: 10px;
+	
+	margin: 0px;
+	
+	margin-top: 6px;
+	
+	margin-bottom: 10px;
+	
+	text-align: center;
+}
+#sharey {
+	
+	margin-left: 2px;
+	
+	margin-right: 2px;
+	
+	font-size: 25px;
+	
+	cursor: pointer;
+	
+	margin-bottom: 5px;
+	
+	margin-top: 5px;
+}
+
+#like_number_t {
+	
+	text-align: center;
+	
+	margin:  0px;
+	
+	margin-top; 5px;
+	
+	margin-bottom: 0ssssfpx;
+	
+	font-family: "Noto Sans";
+}
+
+.modal_inner {
+	
+  width: max-content;
+	
+  display: block;
+	
+  margin-left: auto;
+	
+  margin-right: auto;
+}
+
+
+
+
+#header_gen {
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+}
+
+#header_about {
+	
+	width: 60%;
+	
+	background-color: white;
+	
+	display: inline-block;
+	
+	margin-top: 20px;
+	
+	border-radius: 15px 0px 0px 0px;
+	
+	box-shadow: 1px 1px 14px black;
+	
+	
+}
+
+#header_author_stats {
+	
+	display: inline-block;
+	
+	width: 20%;
+	
+	background-color: white;
+	
+	margin-top: 20px;
+	
+	border-radius: 15px 0px 0px 0px;
+	
+	box-shadow: 1px 1px 14px black;
+	
+}
+
+
+#about_image_1 {
+	
+	border-radius: 50%;
+	
+	box-shadow: 1px 1px 4px black;
+	
+	width: 100px;
+	
+	vertical-align: middle;
+	
+	display: inline-block;
+	
+	margin-top: 20px;
+	
+	margin-bottom: 20px;
+	
+	margin-left: 20px;
+}
+
+
+#about_name_1 {
+	
+	font-family: "Noto Sans";
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+	
+	margin-left: 30px;
+	
+	
+}
+
+
+.loading_b {
+	
+  display: block;
+  width: 190px;
+  height: 260px;
+  position: relative;
+  background: white;
+  z-index: 1;
+  box-shadow: 1px 1px 10px black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: box-shadow .3s linear;
+  transition: box-shadow .3s linear;
+  animation-name: skeleton;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+#loading_spinner_modern {
+	
+	margin-top: 50px;
+}
+
+
+/* BARRA RETORN A ANTERIOR */
+
+
+#bar_return_new {
+	
+	margin-top: 40px;
+	
+	background-color: white;
+	
+	width: 85%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 20px black;
+	
+	border-radius: 5px 5px 5px 5px;
+	
+	
+}
+
+#bar_return_new:hover {
+	
+	box-shadow: 1px 1px 25px black;
+	
+	cursor: pointer;
+}
+
+
+
+#bar_return_new_q {
+	
+	margin-top: 40px;
+	
+	background-color: white;
+	
+	width: 40%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: none;
+	
+	box-shadow: 1px 1px 20px black;
+	
+	border-radius: 5px 5px 5px 5px;
+	
+	
+}
+
+#bar_return_new_q:hover {
+	
+	box-shadow: 1px 1px 25px black;
+	
+	cursor: pointer;
+}
+
+
+
+#return_new_text {
+	
+	text-align: center;
+	
+	padding-top: 20px;
+	
+    padding-bottom: 20px;
+	
+	font-family: "Noto Sans";
+	
+	font-weight: bolder;
+	
+	color: dimgray;
+	
+	margin: 0px;
+}
+
+
+.not_display {
+	
+	display: none;
+}
+
+
+
+
+
+
+
+
+#bar_return_new_2 {
+	
+	margin-top: 40px;
+	
+	background-color: white;
+	
+	width: 60%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 20px black;
+	
+	border-radius: 5px 5px 5px 5px;
+	
+	cursor: pointer;
+	
+	
+}
+
+
+
+
+#amazon_info {
+	
+	text-align: center;
+	
+	font-family: "Noto Sans";
+	
+	font-size: 14px;
+	
+	font-style: italic;
+}
+
+
+
+
+/* ABOUT ME */
+
+
+#about_me {
+	
+	width: 100%;
+}
+
+
+
+#about_card {
+	
+	margin-top: 20px;
+	
+	background-color: white;
+	
+	width: 85%;
+	
+	height: max-content;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	display: block;
+	
+	box-shadow: 1px 1px 15px black;
+	
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+#content_boundingbox_b {
+	
+	width: max-content;
+	
+	margin: 0px;
+	
+	display: inline-block;
+}
+
+
+#content_boundingbox_c {
+	
+	display: inline-block;
+}
+
+
+#author_name_text_b {
+	
+	color: darkslategray;
+	
+	font-family: "Just Another Hand";
+	
+	font-size: 50px;
+	
+	display: inline-block;
+	
+	vertical-align: middle;
+}
+
+
+#author_photo_b {
+	
+	border-radius: 50%;
+	
+	vertical-align: middle;
+	
+	margin-left: 25px;
+	
+	margin-right: 25px;
+	
+	width: 70px;
+	
+	display: inline-block;
+}
+
+
+#bio {
+	
+	margin-left: 40px;
+	
+	margin-right: 40px;
+	
+	margin-top: 40px;
+	
+	margin-bottom: 40px;
+	
+	display: block;
+	
+	font-family: "Noto Sans";
+	
+	font-size: 15px;
+	
+	text-align: justify;
+}
+
+
+#more_author {
+	
+	margin-left: 25px;
+	
+	margin-right: 30px;
+	
+}
+
+#more_author_mobile {
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+	widows: max-content;
+	
+}
+
+#wk_box {
+	
+	width: max-content;
+	
+	height: max-content;
+	
+}
+
+
+
+
+
+.book_own {
+	
+	width: 120px;
+	
+	height: 150px;
+	
+	box-shadow: 1px 1px 4px black;
+}
+
+.book_own:hover {
+	
+	width: 120px;
+	
+	height: 150px;
+	
+	box-shadow: 1px 1px 4px black;
+	
+	cursor: pointer;
+	
+}
+
+
+#title_bk {
+	
+    font-size: 22px;
+	
+	font-family: "Sunshine Demo";
+	
+	margin-top: 0px;
+	
+	margin-bottom: 10px;
+}
+
+
+.calaix {
+	
+	display: inline-block;
+}
+
+
+
+#comp_a {
+	
+	width: 480px;
+	
+	display: inline-block;
+}
+
+
+#comp_a_mobile {
+	
+	width: 100%;
+	
+	display: inline-block;
+}
+
+
+
+#comp_b {
+	
+	width: max-content;
+	
+	display: inline-block;
+}
+
+
+
+
+#comp_defi {
+	
+	width: max-content;
+	
+	display: inline-block;
+	
+	margin-left: 30px;
+	
+
+}
+
+
+#comp_defi_mobile {
+	
+	width: max-content;
+	
+	display: block;
+	
+	margin-left: auto;
+	
+	margin-right: auto;
+	
+
+	
+
+}
+
+
+#wikilogo:hover {
+	
+	cursor: pointer;
+}
+
+
