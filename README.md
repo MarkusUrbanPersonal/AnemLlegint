@@ -9,5 +9,8 @@ The website has three main parts:
 2. QUOTES --> Literary quotations from famous authors
 3. ABOUT --> A little bit of information about the blog writer
 
-This blog isn't a professional project, so the code you'll find here isn't clean and has lots of unneccessary comments and ```console.log()``` statements
+
+This blog isn't a professional project, so the code you'll find here isn't clean and has lots of unneccessary comments and ```console.log()``` statements.
+
+
 
